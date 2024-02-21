@@ -1,0 +1,44 @@
+.main-cta {
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  &-button {
+    border: $border-size solid black;
+    font-size: 36px;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.315);
+    }
+  }
+
+  &-text {
+    font-size: 24px;
+
+    @include breakpoint(lg) {
+      font-size: 48px;
+    }
+  }
+
+  &-arrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -53px;
+    margin-bottom: -60px;
+
+    @include breakpoint(lg) {
+      margin-left: -97px;
+      margin-bottom: -102px;
+    }
+
+    img {
+      width: 70px;
+      @include breakpoint(lg) {
+        width: 120px;
+      }
+    }
+  }
+}

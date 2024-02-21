@@ -1,0 +1,27 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+@import "./components/components.styles.scss";
+@import "./main/main.styles.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Osf4vto";
+  src: url("https://use.typekit.net/osf4vto.css");
+}
+
+body {
+  font-family: "Osf4vto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212121;
+  font-weight: normal;
+
+  @include breakpoint(lg) {
+    font-size: 24px;
+  }
+}
