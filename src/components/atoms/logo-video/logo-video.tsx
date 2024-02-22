@@ -12,7 +12,7 @@ const LogoVideo: React.FC<LogoVideoProps> = ({
 }) => {
   return (
     <div className="logo-video">
-      <video width={width} height={height} autoPlay muted loop>
+      <video width={width} height={height} autoPlay loop playsInline>
         <source src={AstroLogoAnimation} type="video/mp4" />
       </video>
     </div>
