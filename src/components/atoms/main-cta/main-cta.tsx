@@ -3,8 +3,13 @@ import useBreakpoints from "../../../core/useBreakpoints/useBreakpoints";
 
 const MainCTA: React.FC = () => {
   const breakpoint = useBreakpoints();
+
+  const openEmail = () => {
+    window.open("mailto:hello@astrocollective.it?subject=Richiesta%20contatto");
+  };
+
   return (
-    <div className="main-cta">
+    <div className="main-cta" onClick={openEmail}>
       {(breakpoint === "xs" || breakpoint === "sm") && (
         <div className="main-cta-button">contattaci</div>
       )}

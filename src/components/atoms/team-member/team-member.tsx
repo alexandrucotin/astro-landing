@@ -14,7 +14,9 @@ const TeamMember: React.FC<Props> = ({ name, partitaIva, role, link }) => {
       <div className="team-member-role">{role}</div>
       <div className="team-member-partita-iva">Partita IVA: {partitaIva}</div>
       <div className="team-member-download-cv">
-        <a href={link}>Download CV</a>
+        <a href={link} download={`CV_${name}-${role}`} target="_blank">
+          Download CV
+        </a>
       </div>
     </div>
   );

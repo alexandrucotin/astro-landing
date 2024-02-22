@@ -14,6 +14,7 @@
   }
 
   @include breakpoint(xl) {
+    grid-template-columns: 40% 25% 35%;
     grid-template-areas:
       "about team cta"
       "about team video";
@@ -36,13 +37,17 @@
     padding: 16px;
     transition: box-shadow 0.3s ease;
     align-self: flex-start;
-    @include breakpoint(lg) {
-      padding: $vertical-padding $horizontal-padding-desktop;
+
+    @include breakpoint(md) {
+      z-index: 1;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.315);
+      &:hover {
+        cursor: pointer;
+      }
     }
 
-    &:hover {
-      cursor: pointer;
-      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.315);
+    @include breakpoint(lg) {
+      padding: $vertical-padding $horizontal-padding-desktop;
     }
   }
 

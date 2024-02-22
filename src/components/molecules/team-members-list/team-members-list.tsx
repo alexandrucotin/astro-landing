@@ -1,6 +1,7 @@
 import React from "react";
 import LabelValue from "../../atoms/label-value/label-value";
 import TeamMember from "../../atoms/team-member/team-member";
+import CV_COTIN from "../../../assets/Cotin_Alexandru_CV.pdf";
 
 const TeamMembersList: React.FC = () => {
   return (
@@ -8,31 +9,31 @@ const TeamMembersList: React.FC = () => {
       <div className="team-members-list">
         <TeamMember
           name={"Federico Gotti"}
-          partitaIva={""}
+          partitaIva={"03701540167"}
           role={"Account Manager"}
           link={""}
         />
         <TeamMember
           name={"Luca Luoni"}
-          partitaIva={""}
+          partitaIva={"03882630126"}
           role={"Digital Designer"}
           link={""}
         />
         <TeamMember
           name={"Samuele Battistella"}
-          partitaIva={""}
+          partitaIva={"03817750122"}
           role={"Videomaker"}
           link={""}
         />
         <TeamMember
           name={"Cotin Alexandru"}
-          partitaIva={""}
+          partitaIva={"05005780233"}
           role={"Web developer"}
-          link={""}
+          link={CV_COTIN}
         />
         <TeamMember
           name={"Emanuele Ghisellini"}
-          partitaIva={""}
+          partitaIva={"01603280296"}
           role={"Social Media Manager"}
           link={""}
         />
