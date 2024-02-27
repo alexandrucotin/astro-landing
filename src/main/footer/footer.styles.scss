@@ -1,0 +1,25 @@
+.footer {
+  border-top: $border-size solid black;
+  display: flex;
+  flex-direction: column;
+  padding: $vertical-padding $horizontal-padding-mobile;
+  gap: 1rem;
+  text-align: center;
+  align-self: flex-end;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $vertical-padding $horizontal-padding-desktop;
+  }
+
+  &-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    a {
+      color: black;
+    }
+  }
+}

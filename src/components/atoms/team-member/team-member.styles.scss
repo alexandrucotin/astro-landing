@@ -1,5 +1,19 @@
 .team-member {
+  display: grid;
+
+  &-name {
+    margin-bottom: 0.5rem;
+  }
+  &-role {
+    font-weight: bold;
+  }
+
+  &-partita-iva {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
   &-download-cv {
+    align-self: flex-end;
     a {
       color: black;
     }

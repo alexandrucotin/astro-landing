@@ -14,14 +14,28 @@
   src: url("https://use.typekit.net/osf4vto.css");
 }
 
-body {
+html {
   font-family: "Osf4vto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: #212121;
   font-weight: normal;
 
   @include breakpoint(lg) {
+    font-size: 16px;
+  }
+
+  @include breakpoint(xl) {
+    font-size: 18px;
+  }
+
+  @include breakpoint(xxl) {
     font-size: 24px;
   }
+}
+
+.app-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }

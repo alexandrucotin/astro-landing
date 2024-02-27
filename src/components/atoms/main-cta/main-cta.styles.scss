@@ -5,21 +5,17 @@
 
   &-button {
     border: $border-size solid black;
-    font-size: 36px;
+    font-size: 1.8rem;
     width: 100%;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.315);
-
-    &:hover {
-      cursor: pointer;
-      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.315);
-    }
+    padding: 0.5rem 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   &-text {
-    font-size: 24px;
+    font-size: 2rem;
 
     @include breakpoint(lg) {
-      font-size: 48px;
+      font-size: 2.5rem;
     }
   }
 

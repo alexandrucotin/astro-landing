@@ -1,9 +1,12 @@
 import LabelValue from "../../components/atoms/label-value/label-value";
 import TeamMembersList from "../../components/molecules/team-members-list/team-members-list";
 import MainCTA from "../../components/atoms/main-cta/main-cta";
-import LogoVideo from "../../components/atoms/logo-video/logo-video";
+import LogoGif from "../../components/atoms/logo-gif/logo-gif";
 
 const Landing: React.FC = () => {
+  const openEmail = () => {
+    window.open("mailto:hello@astrocollective.it?subject=Richiesta%20contatto");
+  };
   return (
     <div className="landing">
       <div className="landing-about">
@@ -28,11 +31,11 @@ const Landing: React.FC = () => {
         <TeamMembersList />
       </div>
 
-      <div className="landing-cta">
+      <div className="landing-cta" onClick={openEmail}>
         <MainCTA />
       </div>
-      <div className="landing-video">
-        <LogoVideo />
+      <div className="landing-gif">
+        <LogoGif />
       </div>
     </div>
   );

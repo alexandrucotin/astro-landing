@@ -1,0 +1,18 @@
+.logo-gif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  img {
+    width: auto;
+    max-height: 300px;
+
+    @include breakpoint(lg) {
+      max-height: 400px;
+    }
+
+    @include breakpoint(xxl) {
+      max-height: 600px;
+    }
+  }
+}
