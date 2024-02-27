@@ -12,7 +12,7 @@ const TeamMember: React.FC<Props> = ({ name, partitaIva, role, link }) => {
     <div className="team-member">
       <div className="team-member-name">{name}</div>
       <div className="team-member-role">{role}</div>
-      <div className="team-member-partita-iva">Partita IVA: {partitaIva}</div>
+      <div className="team-member-partita-iva">P.IVA: {partitaIva}</div>
       <div className="team-member-download-cv">
         <a
           href={link}
