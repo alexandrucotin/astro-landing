@@ -1,4 +1,4 @@
-import AstroLogo from "../../assets/astro.png";
+import AstroLogo from "../../assets/logo_web.svg";
 
 const Navbar: React.FC = () => {
   return (
