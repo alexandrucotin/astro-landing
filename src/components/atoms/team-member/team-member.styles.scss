@@ -10,13 +10,5 @@
   }
   &-download-cv {
     align-self: flex-end;
-    a {
-      color: black;
-
-      &:hover {
-        cursor: pointer;
-        color: red;
-      }
-    }
   }
 }
