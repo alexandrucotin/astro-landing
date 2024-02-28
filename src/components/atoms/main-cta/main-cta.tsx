@@ -11,9 +11,9 @@ const MainCTA: React.FC = () => {
       )}
       {breakpoint !== "xs" && breakpoint !== "sm" && (
         <>
-          <span className="main-cta-text">
+          <h1 className="main-cta-text">
             Creiamo qualcosa di <br /> bello insieme
-          </span>
+          </h1>
           <div className="main-cta-arrow">
             <img src={ArrowImage} alt="Your Image" />
           </div>

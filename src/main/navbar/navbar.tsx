@@ -6,9 +6,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-logo">
         <img src={AstroLogo} alt="Logo" />
       </div>
-      <div className="navbar-text">
-        <p>Il sito ufficiale è in lavorazione</p>
-      </div>
+      <h3 className="navbar-text">Il sito ufficiale è in lavorazione</h3>
     </nav>
   );
 };
