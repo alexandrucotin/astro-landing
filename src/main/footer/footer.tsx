@@ -6,14 +6,14 @@ const Footer: React.FC = () => {
 
   return (
     <div className="footer">
-      <div>© Astro Collective 2024 - All rights reservered</div>
+      <p>© Astro Collective 2024 - All rights reservered</p>
       {(breakpoints === "xs" || breakpoints === "sm") && (
-        <div>
+        <p>
           Collaborazione tra professionisti <br /> Busto Arsizio (VA)
-        </div>
+        </p>
       )}
       {breakpoints !== "xs" && breakpoints !== "sm" && (
-        <div>Collaborazione tra professionisti - Busto Arsizio (VA)</div>
+        <p>Collaborazione tra professionisti - Busto Arsizio (VA)</p>
       )}
       <div className="footer-links">
         <a href="">Privacy policy</a>

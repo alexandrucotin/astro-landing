@@ -18,12 +18,24 @@ const Landing: React.FC = () => {
           multimedia, comunicazione e design, che ha trasformato la propria
           passione in una professione avvincente, dando vita così ad Astro.
         </LabelValue>
-        <LabelValue label={"Servizi"}>
-          Offriamo consulenza di design e comunicazione per clienti provenienti
-          da tutti i campi di interesse con particolare attenzione alla ricerca
-          e alla creazione di progetti originali. Siamo specializzati in: Brand
-          DesignEditorial DesignPackaging DesignSocial Media ManagementVideo
-          productionMotion DesignPhotographyUX/UI DesignCMS and Platform Builds
+        <LabelValue label={"Servizi"} type="child">
+          <p>
+            Offriamo consulenza di design e comunicazione per clienti
+            provenienti da tutti i campi di interesse con particolare attenzione
+            alla ricerca e alla creazione di progetti originali.
+          </p>
+          <p style={{ margin: "0.5rem 0" }}>Siamo specializzati in:</p>
+          <ul>
+            <li>Brand Design</li>
+            <li>Editorial Design</li>
+            <li>Packaging Design</li>
+            <li>Social Media Management</li>
+            <li>Video production</li>
+            <li>Motion Design</li>
+            <li>Photography</li>
+            <li>UX/UI Design</li>
+            <li>CMS and Platform Builds</li>
+          </ul>
         </LabelValue>
         <LabelValue label={"Mail"}>hello@astrocollective.it </LabelValue>
       </div>

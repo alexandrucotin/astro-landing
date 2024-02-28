@@ -4,7 +4,7 @@ import AstroLogoAnimation from "../../../assets/logo.gif";
 const LogoGif: React.FC = () => {
   return (
     <div className="logo-gif">
-      <img src={AstroLogoAnimation} />
+      <img src={AstroLogoAnimation} alt="Astro collective logo gif animation" />
     </div>
   );
 };
